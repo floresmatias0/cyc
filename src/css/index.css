@@ -124,6 +124,23 @@ button:hover{
 button:active{
     transform: scale(0.95);
 }
+.customButton{
+    border-radius:  5px;
+    width: 10em;
+    font-size: 0.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: none;
+}
+
 @media screen and (max-width:960px){
-    
+    .containerAll{
+        width: 100%;
+    }
+    .chooseCards, .card{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .chooseCards div{
+        margin: 16px;
+    }
 }
