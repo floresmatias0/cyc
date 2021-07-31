@@ -63,7 +63,7 @@ let showLocations = () => {
                     width="14px"
                 />  ${element.location}
             </li>
-            <button> Más información </button>
+            <button class="info"> Más información </button>
         </ul>
         `;
     });
