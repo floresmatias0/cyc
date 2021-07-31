@@ -9,7 +9,9 @@
   },
   "author": "matias flores",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "sweetalert2": "^11.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",

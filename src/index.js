@@ -4,6 +4,7 @@ import pin from "./assets/images/pin.png";
 import habitacion from "./assets/images/habitacion.jpg";
 import cocina from "./assets/images/cocina.jpg";
 import entrada from "./assets/images/entrada.jpg";
+import Swal from 'sweetalert2';
 
 let lugares = [
     {   
@@ -62,7 +63,7 @@ let showLocations = () => {
                     width="14px"
                 />  ${element.location}
             </li>
-            <button> Más información </button>
+            <button class="info"> Más información </button>
         </ul>
         `;
     });
@@ -70,6 +71,22 @@ let showLocations = () => {
     newContainer += `</div>`
 
     container.innerHTML += newContainer; 
+
+    let buttonsInfo = document.querySelectorAll(".info");
+
+    for(let i = 0; i < buttonsInfo.length; i++) {
+        buttonsInfo[i].addEventListener("click", () => {
+            Swal.fire({
+                buttonsStyling: false,
+                customClass: {
+                    confirmButton: "customButton",
+                  },
+                confirmButtonText: 'Cool',
+                title: "¡Hi, I am an example alert!"
+            })
+        })
+    }
+
 
 }
 
