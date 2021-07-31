@@ -1,9 +1,9 @@
 import "./css/index.css";
+import home from "./assets/images/home.png";
+import pin from "./assets/images/pin.png";
 import habitacion from "./assets/images/habitacion.jpg";
 import cocina from "./assets/images/cocina.jpg";
 import entrada from "./assets/images/entrada.jpg";
-import home from "./assets/images/home.png";
-import pin from "./assets/images/pin.png";
 
 let lugares = [
     {   
@@ -28,6 +28,7 @@ let lugares = [
         location: "Italia 2131, San Miguel"
     }
 ];
+
 
 let container = document.getElementById("locationCards");
 
@@ -69,10 +70,6 @@ let showLocations = () => {
     newContainer += `</div>`
 
     container.innerHTML += newContainer; 
-    // container.innerHTML = join(
-    //     newContainer
-    // ); 
-
 
 }
 

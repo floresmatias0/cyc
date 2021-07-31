@@ -124,3 +124,6 @@ button:hover{
 button:active{
     transform: scale(0.95);
 }
+@media screen and (max-width:960px){
+    
+}
