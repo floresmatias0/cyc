@@ -1,20 +1,27 @@
+import "./css/index.css";
+import habitacion from "./assets/images/habitacion.jpg";
+import cocina from "./assets/images/cocina.jpg";
+import entrada from "./assets/images/entrada.jpg";
+import home from "./assets/images/home.png";
+import pin from "./assets/images/pin.png";
+
 let lugares = [
     {   
-        img : "assets/images/habitacion.jpg",
+        img : habitacion,
         price: "U$S 50.000",
         title: "Cañitas",
         size: "2,3 y 4 ambientes",
         location: "Italia 2131, San Miguel"
     },
     {   
-        img : "assets/images/cocina.jpg",
+        img : cocina,
         price: "U$S 50.000",
         title: "Cañitas",
         size: "2,3 y 4 ambientes",
         location: "Italia 2131, San Miguel"
     },
     {   
-        img : "assets/images/entrada.jpg",
+        img : entrada,
         price: "U$S 50.000",
         title: "Cañitas",
         size: "2,3 y 4 ambientes",
@@ -42,14 +49,14 @@ let showLocations = () => {
             <li class="title"><h3>${element.title}</h3></li>
             <li class="size">
                 <img 
-                    src="assets/images/home.png" 
+                    src=${home} 
                     alt="home" 
                     width="14px"
                 />  ${element.size}
             </li>
             <li class="location">
                 <img 
-                    src="assets/images/pin.png" 
+                    src=${pin} 
                     alt="location" 
                     width="14px"
                 />  ${element.location}
